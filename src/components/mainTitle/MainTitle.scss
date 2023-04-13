@@ -1,0 +1,213 @@
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 120px;
+  -webkit-user-select: none;
+  user-select: none;
+  color: #1c1c1c;
+
+  .background-color {
+    position: relative;
+
+    .foreground-color {
+      position: relative;
+      z-index: 1;
+      background-size: 100%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+
+    &:before {
+      content: var(--content);
+      position: absolute;
+      z-index: 0;
+      background-size: 100%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-color: #1c1c1c;
+    }
+
+    &.background-color-0:before {
+      animation: animated-gradient-text_fade-background-1 8s infinite;
+
+    }
+
+    .foreground-color-0 {
+      background-color: #00DFD8;
+      background-image: linear-gradient(45deg, #007CF0, #00DFD8);
+      animation: animated-gradient-text_fade-foreground-1 8s infinite;
+    }
+
+    &.background-color-1:before {
+      animation: animated-gradient-text_fade-background-2 8s infinite;
+    }
+
+    .foreground-color-1 {
+      background-color: #FF0080;
+      background-image: linear-gradient(45deg, #7928CA, #FF0080);
+      animation: animated-gradient-text_fade-foreground-2 8s infinite;
+    }
+
+    &.background-color-2:before {
+      animation: animated-gradient-text_fade-background-3 8s infinite;
+    }
+
+    .foreground-color-2 {
+      background-color: #F9CB28;
+      background-image: linear-gradient(45deg, #FF4D4D, #F9CB28);
+      animation: animated-gradient-text_fade-foreground-3 8s infinite;
+    }
+  }
+}
+
+@keyframes animated-gradient-text_fade-background-1 {
+  0%,
+  16.667%,
+  to {
+    opacity: 0
+  }
+  25%,
+  91.667% {
+    opacity: 1
+  }
+}
+
+@keyframes animated-gradient-text_fade-foreground-1 {
+  0%,
+  16.667%,
+  to {
+    opacity: 1
+  }
+  33.333%,
+  83.333% {
+    opacity: 0
+  }
+}
+
+@keyframes animated-gradient-text_fade-background-2 {
+  0%,
+  to {
+    opacity: 1
+  }
+  33.333%,
+  50% {
+    opacity: 0
+  }
+  25%,
+  58.333% {
+    opacity: 1
+  }
+}
+
+@keyframes animated-gradient-text_fade-foreground-2 {
+  0%,
+  to {
+    opacity: 0
+  }
+  33.333%,
+  50% {
+    opacity: 1
+  }
+  16.667%,
+  66.667% {
+    opacity: 0
+  }
+}
+
+@keyframes animated-gradient-text_fade-background-3 {
+  0%,
+  58.333%,
+  91.667%,
+  to {
+    opacity: 1
+  }
+  66.667%,
+  83.333% {
+    opacity: 0
+  }
+}
+
+@keyframes animated-gradient-text_fade-foreground-3 {
+  0%,
+  50%,
+  to {
+    opacity: 0
+  }
+  66.667%,
+  83.333% {
+    opacity: 1
+  }
+}
+
+//// Define the number of words and duration of animation as props
+//$title-words: 5;
+//$title-duration: 10s;
+//
+//// Define the start and end colors for the gradient
+//$start-color: #007CF0;
+//$end-color: #00DFD8;
+//
+//// Calculate the delay for each word to show up based on the total duration
+//$title-delay: $title-duration / $title-words;
+//
+//.title {
+//  display: flex;
+//  flex-direction: column;
+//  gap: 15px;
+//  font-size: 120px;
+//  -webkit-user-select: none;
+//  user-select: none;
+//  color: #1c1c1c;
+//
+//  .background-color {
+//    position: relative;
+//
+//    .foreground-color {
+//      position: relative;
+//      z-index: 1;
+//      background-size: 100%;
+//      -webkit-background-clip: text;
+//      -webkit-text-fill-color: transparent;
+//      animation: animated-gradient-text_fade-foreground $title-duration linear infinite;
+//    }
+//
+//    &:before {
+//      content: var(--content);
+//      position: absolute;
+//      z-index: 0;
+//      background-size: 100%;
+//      -webkit-background-clip: text;
+//      -webkit-text-fill-color: transparent;
+//      background-color: #1c1c1c;
+//      animation: animated-gradient-text_fade-background $title-duration linear infinite;
+//    }
+//
+//    @for $i from 0 to $title-words {
+//      .foreground-color-#{$i} {
+//        background-color: $start-color;
+//        background-image: linear-gradient(45deg, $start-color, $end-color);
+//        animation-delay: $title-delay * $i;
+//      }
+//    }
+//  }
+//}
+//
+//@keyframes animated-gradient-text_fade-foreground {
+//  0%, 100% {
+//    opacity: 0;
+//  }
+//  50% {
+//    opacity: 1;
+//  }
+//}
+//
+//@keyframes animated-gradient-text_fade-background {
+//  0%, 50%, 100% {
+//    opacity: 1;
+//  }
+//  25%, 75% {
+//    opacity: 0;
+//  }
+//}

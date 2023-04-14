@@ -1,42 +1,125 @@
 #root {
+  background: var(--bg-main-light);
+}
+
+.main {
+  max-width: 1280px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0 40px;
+  text-align: center;
+
+  .main__title-wrapper {
+    margin: 60px 0 20px 0;
+  }
+
+  .main__description {
+    font-size: 26px;
+    color: #666;
+    line-height: 180%;
+    font-family: var(--ff-text);
+    font-weight: 400;
+    max-width: 900px;
+    text-align: center;
+    margin: 0 auto 60px auto;
+  }
+
+  .main__buttons-wrapper {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+  }
+}
+
+
+.features {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  padding: 70px 40px;
+
+  .features__heading {
+    font-family: var(--ff-text);
+    font-weight: 500;
+    font-size: 38px;
+    color: #1c1c1c;
+    line-height: 150%;
+    text-align: center;
+
+    margin-bottom: 30px;
+  }
+
+  .features__content {
+    display: flex;
+    align-items: center;
+
+    .features__img {
+      position: relative;
+      flex: 1 50%;
+      width: 50%;
+      height: 800px;
+      overflow: hidden;
+
+      .features__logo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 150%;
+        height: 100%;
+        transform: translate(-30%, -50%);
+        animation: features-logo-spin infinite 20s linear;
+
+      }
+    }
+
+    .features__list {
+      flex: 50%;
+
+      .features__item {
+        padding: 20px;
+        //margin-bottom: 40px;
+        //border-radius: 10px;
+        //box-shadow: 9px 9px 16px 0 #a3b1c6, -9px -9px 16px 0px rgba(#fff, 0.6);
+
+        .features__item-title {
+          font-family: var(--ff-title);
+          font-size: 28px;
+          line-height: 150%;
+          color: #444;
+        }
+
+        .features__item-desc {
+          font-size: 22px;
+          color: #666;
+          line-height: 180%;
+          font-family: var(--ff-text);
+          font-weight: 400;
+        }
+      }
+    }
+  }
 }
+
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  //height: 6em;
+  //padding: 1.5em;
+  //will-change: filter;
+  //transition: filter 300ms;
 }
 
-@keyframes logo-spin {
+.logo:hover {
+  //filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  //filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes features-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }

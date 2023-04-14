@@ -1,5 +1,24 @@
 @import "normalize.css";
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700');
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700;900');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600');
+
+//Variants for font family
+:root {
+  --ff-logo: 'Montserrat', sans-serif;
+  --ff-title: 'Inter', sans-serif;
+  --ff-text: 'Inter Tight', sans-serif;
+  --ff-text-2: 'Roboto Mono', monospace;
+}
+
+//Variants for color
+:root {
+  --bg-main-light: #e9eef6;
+  --bg-main-dark: #121212;
+  --text-dark-gray: #353535;
+}
+
 *,
 *:after,
 *:before {
@@ -8,6 +27,56 @@
   padding: 0;
 }
 
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+  cursor: pointer;
+}
+
+button {
+  padding: 0;
+  background-color: transparent;
+  background-image: none;
+}
+
+button,
+[role="button"] {
+  cursor: pointer;
+}
+
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--ff-text);
+  font-weight: 400;
 }

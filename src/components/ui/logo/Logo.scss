@@ -15,7 +15,7 @@
     top: 0;
     left: 0;
     background: #007CF0;
-    filter: blur(25px);
+    filter: blur(30px);
     transition: filter .8s .5s;
   }
 
@@ -28,7 +28,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     background: #7928CA;
-    filter: blur(35px);
+    filter: blur(45px);
     transition: filter .8s .5s;
   }
 
@@ -40,6 +40,11 @@
 
   &:hover .logo__icon {
     animation: logo-spin infinite 2s linear;
+  }
+
+  .logo__icon {
+    width: 24px;
+    height: 24px;
   }
 
   .logo__text {

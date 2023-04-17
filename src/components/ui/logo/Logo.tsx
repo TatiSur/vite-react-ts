@@ -1,5 +1,5 @@
 import './Logo.scss'
-import { LogoIcon } from '../../assets'
+import { LogoIcon } from '@assets/index'
 
 function Logo(): JSX.Element {
     return (

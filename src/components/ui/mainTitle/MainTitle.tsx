@@ -1,9 +1,5 @@
-import { CSSProperties, ReactElement } from 'react'
+import { ReactElement } from 'react'
 import './MainTitle.scss'
-
-interface ElementStyle extends CSSProperties {
-    '--content': string;
-}
 
 interface Props {
     children: String
@@ -15,14 +11,14 @@ function MainTitle({ children }: Props): ReactElement {
         <h1 className="title">
             {children
                 .split(' ')
-                .map((str, index) => (
+                .map((word, index) => (
                     <span
+                        data-text={word}
                         key={index}
                         className={`background-color background-color-${index}`}
-                        style={{ '--content': `"${str}"` } as ElementStyle}
                     >
                        <span className={`foreground-color foreground-color-${index}`}>
-                            {str}
+                            {word}
                        </span>
                    </span>
                 ))

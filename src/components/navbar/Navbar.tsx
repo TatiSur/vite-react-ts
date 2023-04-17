@@ -1,6 +1,6 @@
 import './Navbar.scss'
-import Logo from '@components/logo/Logo'
-import Button from '@components/button/Button'
+import Logo from '@components/ui/logo/Logo'
+import Button from '@components/ui/button/Button'
 
 function Navbar(): JSX.Element {
 
@@ -9,19 +9,19 @@ function Navbar(): JSX.Element {
             <Logo/>
 
             <nav>
-                <ul className='navbar__list'>
+                <ul className="navbar__list">
                     <li>
-                        <a>
+                        <a href="#features">
                             Features
                         </a>
                     </li>
                     <li>
-                        <a>
+                        <a href="#pricing">
                             Pricing
                         </a>
                     </li>
                     <li>
-                        <a>
+                        <a href="#testimonials">
                             Testimonials
                         </a>
                     </li>
@@ -33,7 +33,7 @@ function Navbar(): JSX.Element {
                 </ul>
             </nav>
 
-            <Button size='small'>
+            <Button size="small">
                 Sign in
             </Button>
         </div>

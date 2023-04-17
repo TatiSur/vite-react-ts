@@ -1,0 +1,26 @@
+.footer {
+  background: #1c1c1c;
+  color: var(--bg-main-light);
+
+  .footer__container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 100px 40px;
+
+    display: flex;
+    gap: 60px;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    .footer__nav {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+  }
+
+  .copy {
+    text-align: center;
+    padding-bottom: 2.5em;
+  }
+}

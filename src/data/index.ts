@@ -30,3 +30,48 @@ export const features = [
         desc: 'Our dedicated support team is here to help you with any questions or issues you may have, ensuring that you get the most out of our CRM.',
     },
 ]
+
+export const pricing = [
+    {
+        id: 1,
+        name: 'Basic Plan',
+        desc: 'Perfect for small businesses and startups',
+        included: 'basic CRM functionality, 24/7 customer support, and 2GB of storage',
+        price: '$9.99/month'
+    },
+    {
+        id: 2,
+        name: 'Pro Plan',
+        desc: 'Ideal for growing businesses',
+        included: 'advanced CRM functionality, priority customer support, and 10GB of storage',
+        price: '$24.99/month'
+    },
+    {
+        id: 3,
+        name: 'Enterprise Plan',
+        desc: 'Customizable plan for large businesses and corporations',
+        included: ' custom integrations, dedicated account manager, and unlimited storage',
+        price: 'Contact us for a quote'
+    }
+]
+
+export const testimonials = [
+    {
+        id: 1,
+        text: 'I\'ve been using this CRM for the past year and it\'s completely transformed the way I manage my business. The user-friendly interface and powerful features have made my workflow so much smoother.',
+        author: 'John Smith',
+        position: 'CEO of XYZ Company'
+    },
+    {
+        id: 2,
+        text: 'I highly recommend this CRM to anyone looking to streamline their business processes. The automation tools have saved me countless hours of manual work and the customer support team is top-notch.',
+        author: 'Jane Doe',
+        position: 'Marketing Manager at ABC Inc.'
+    },
+    {
+        id: 3,
+        text: 'As a small business owner, I was hesitant to invest in a CRM. But after trying this one out, I can confidently say it\'s been worth every penny. It\'s helped me stay organized and on top of my tasks, and the customizable reporting has given me valuable insights into my business.',
+        author: 'Bob Johnson',
+        position: 'Owner of Bob\'s Bikes'
+    },
+]

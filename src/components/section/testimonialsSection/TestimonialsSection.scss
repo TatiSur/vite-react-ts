@@ -1,0 +1,50 @@
+.testimonials-section {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 100px 40px 130px;
+
+  .testimonials-section__subtitle {
+    font-size: 26px;
+    color: #666;
+    line-height: 180%;
+    font-family: var(--ff-text);
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .testimonials-section__cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+
+    .testimonials-section__card {
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 9px 9px 16px 0 #dadfe3, -9px -9px 16px 0px rgba(#fff, 0.6);
+      margin-bottom: 30px;
+
+      .testimonials-section__card-text {
+        line-height: 1.5;
+        margin-bottom: 20px;
+      }
+
+      .testimonials-section__card-author {
+        font-size: 18px;
+        font-weight: 500;
+        font-family: var(--ff-text-2);
+        line-height: 1.5;
+      }
+
+      .testimonials-section__card-position {
+        color: #888;
+      }
+    }
+  }
+
+  .testimonials-section__call-to-action {
+    font-weight: 500;
+    font-size: 22px;
+  }
+}

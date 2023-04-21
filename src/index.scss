@@ -14,9 +14,26 @@
 
 //Variants for color
 :root {
-  --bg-main-light: #e9eef6;
-  --bg-main-dark: #121212;
-  --text-dark-gray: #353535;
+  --main-dark: #121212;
+  --main-light: #e9eef6;
+  --dark-gray: #353535;
+  --dark: #1c1c1c;
+  --light: #fdf9f9;
+}
+
+:root[data-applied-mode="light"] {
+  color-scheme: light;
+  --bg-main: var(--main-light);
+  --title-color: var(--dark);
+  --text: var(--main-dark);
+}
+
+:root[data-applied-mode="dark"] {
+  color-scheme: dark;
+  --bg-main: var(--main-dark);
+  --title-color: var(--light);
+  --text-color: var(--main-light);
+
 }
 
 *,
@@ -79,4 +96,5 @@ button,
 body {
   font-family: var(--ff-text);
   font-weight: 400;
+  scroll-behavior: smooth;
 }

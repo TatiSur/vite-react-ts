@@ -5,6 +5,8 @@
   flex-wrap: nowrap;
   gap: 5px;
   position: relative;
+  -webkit-user-select: none;
+  user-select: none;
   cursor: pointer;
 
   &:before {

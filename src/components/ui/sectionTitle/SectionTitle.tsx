@@ -7,7 +7,7 @@ interface SectionTitleProps {
 }
 
 const defaultColors = {
-    text: '#9ec0d5', first: '#00DFD8', second: '#007CF0',
+    text: '#a0b7c5', first: '#00DFD8', second: '#007CF0',
 }
 
 function SectionTitle({ children, colors = defaultColors }: SectionTitleProps): JSX.Element {

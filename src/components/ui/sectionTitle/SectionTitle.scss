@@ -1,12 +1,14 @@
 .section-title {
   font-size: 85px;
   color: var(--text-color);
-  //color: #496678;
   line-height: 1;
   position: relative;
   z-index: 3;
   display: inline-block;
   margin-bottom: 50px;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: default;
 
 
   &:before {

@@ -1,5 +1,10 @@
 .navbar {
   padding: 2.5em 0;
+  //position: fixed;
+  //z-index: 999;
+  //max-width: 1200px;
+  //width: 100%;
+  //background: var(--bg-main-light);
 
   display: flex;
   justify-content: space-between;
@@ -11,5 +16,11 @@
     gap: 50px;
     align-items: center;
     color: #30332E;
+  }
+
+  .navbar__buttons {
+    display: flex;
+    gap: 50px;
+    align-items: center;
   }
 }

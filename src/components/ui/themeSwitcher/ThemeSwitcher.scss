@@ -1,0 +1,32 @@
+.theme-switcher {
+  position: relative;
+  background: var(--bg-main-light);
+  box-shadow: 9px 9px 16px 0 #dadfe3, -9px -9px 16px 0px rgba(255, 255, 255, 0.6);
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  transition: all .4s;
+  cursor: pointer;
+
+  &:hover {
+    background: #c2e3e0;
+  }
+
+  & > svg {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    transition: all .4s;
+  }
+
+  .theme-switcher__icon--show {
+    opacity: 1;
+  }
+
+  .theme-switcher__icon--hide {
+    opacity: 0;
+  }
+}

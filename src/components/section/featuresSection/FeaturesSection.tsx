@@ -5,7 +5,7 @@ import SectionTitle from '@components/ui/sectionTitle/SectionTitle'
 function FeaturesSection(): JSX.Element {
 
     return (
-        <section className="features" id='features'>
+        <section className="features" id="features">
             <SectionTitle>
                 Features
             </SectionTitle>

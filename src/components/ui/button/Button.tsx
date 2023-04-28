@@ -1,18 +1,18 @@
-import { ReactElement } from 'react'
+import { ButtonHTMLAttributes, ReactElement } from 'react'
 import './Button.scss'
 
-interface Props {
+interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
     children: String
     size?: 'small' | 'large';
     variant?: 'contain' | 'outline';
 }
 
-function Button({ children, size = 'large', variant = 'contain' }: Props): ReactElement {
+function Button({ children, size = 'large', variant = 'contain', ...rest }: ButtonProps): ReactElement {
 
     return (
-        <div className={`button button_${size} button_${variant}`}>
+        <button className={`button button_${size} button_${variant}`} {...rest}>
             {children}
-        </div>
+        </button>
     )
 }
 

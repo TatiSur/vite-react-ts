@@ -21,51 +21,5 @@
       flex-wrap: wrap;
       gap: 50px;
     }
-
-    .features__img {
-      position: relative;
-      flex: 1 50%;
-      width: 10%;
-      height: 800px;
-      overflow: hidden;
-
-
-      .features__logo {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 150%;
-        height: 100%;
-        transform: translate(-30%, -50%);
-        //animation: features-logo-spin infinite 20s linear;
-      }
-    }
-
-    .features__list {
-      //flex: 50%;
-
-      .features__item {
-        padding: 20px;
-        //margin-bottom: 40px;
-        //border-radius: 10px;
-        //box-shadow: 9px 9px 16px 0 #a3b1c6, -9px -9px 16px 0px rgba(#fff, 0.6);
-        flex: 30%;
-
-        .features__item-title {
-          font-family: var(--ff-title);
-          font-size: 22px;
-          line-height: 150%;
-          color: #444;
-        }
-
-        .features__item-desc {
-          font-size: 18px;
-          color: #666;
-          line-height: 180%;
-          font-family: var(--ff-text);
-          font-weight: 400;
-        }
-      }
-    }
   }
 }

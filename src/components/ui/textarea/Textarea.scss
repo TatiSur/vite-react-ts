@@ -1,0 +1,59 @@
+.textarea {
+  position: relative;
+  width: 100%;
+  padding: 15px 20px 30px;
+  border: 1px solid gray;
+  border-radius: 5px;
+
+  //& textarea:focus {
+  //  border: 1px solid #007CF0;
+  //}
+
+  &.textarea--error {
+    border: 1px solid red;
+
+    .textarea__label {
+      color: red;
+    }
+  }
+
+  textarea::-webkit-scrollbar {
+    display: none;
+  }
+
+  .textarea__label {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    z-index: 5;
+    transform: translateY(-50%);
+    background: var(--bg-main);
+    padding: 0 10px;
+    color: gray;
+  }
+
+  .textarea__input {
+    width: 100%;
+    border: none;
+    resize: none;
+    background: transparent;
+    line-height: 150%;
+
+  }
+
+  .textarea__character-count {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    color: lightgrey;
+    font-size: 14px;
+  }
+
+  .textarea__error-icon {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    cursor: pointer;
+    outline: none;
+  }
+}

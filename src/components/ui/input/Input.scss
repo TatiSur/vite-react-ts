@@ -1,0 +1,53 @@
+.input {
+  position: relative;
+  width: 100%;
+
+  &.input--error {
+
+    .input__label {
+      color: red;
+    }
+
+    .input__field {
+      border: 1px solid red;
+    }
+  }
+
+  & > input:focus {
+    box-shadow: 9px 9px 16px 0 #dadfe3, -9px -9px 16px 0px rgba(#fff, 0.6);
+  }
+
+  .input__label {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    z-index: 5;
+    transform: translateY(-50%);
+    background: var(--bg-main);
+    padding: 0 10px;
+    color: gray;
+    line-height: 1;
+  }
+
+  .input__field {
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 100%;
+    padding: 15px 20px 8px;
+    background: transparent;
+    line-height: 150%;
+
+    &:focus {
+      border: 1px solid #007CF0;
+    }
+  }
+
+  .input__error-icon {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    outline: none;
+  }
+}

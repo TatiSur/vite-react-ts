@@ -1,0 +1,16 @@
+.select {
+  position: relative;
+  width: 100%;
+
+  .select__label {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    z-index: 5;
+    transform: translateY(-50%);
+    background: var(--bg-main);
+    padding: 0 10px;
+    color: gray;
+  }
+
+}
